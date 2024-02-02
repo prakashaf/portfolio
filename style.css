@@ -1,0 +1,558 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: jost;
+    color: #ffff;
+    scroll-behavior: smooth;
+}
+.wrapper::before{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    height: 600px;
+    width: 600px;
+    left: -12%;
+    top: 40%;
+    z-index: -1;
+    background: linear-gradient(45deg,#7f00ff,pink);
+    animation: object1 6s linear infinite;
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    left: 35%;
+    top: 12%;
+    z-index: -1;
+    background: linear-gradient(45deg,#7f00ff,pink);
+    animation: object2 6s linear infinite;
+}
+@keyframes object1{
+    50%{
+        right:-13%;
+        top: 20%;
+    }
+
+}
+@keyframes object2{
+    50%{
+        right:35%;
+        top: 19%;
+    }
+
+}
+body {
+    overflow-x: scroll; 
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    background: linear-gradient(139deg, #c332ff, #010a08, #ccd0cf);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 0s ease infinite;
+    -moz-animation: AnimationName 0s ease infinite;
+    animation: AnimationName 0s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+body::-webkit-scrollbar {
+    display: none;  
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    border-radius: 10%;
+    z-index: 9999;   
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+ul li{
+    padding: 0px 0px 0px 40px;
+    margin-top: 10px;
+    
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+ul li i{
+    padding: 10px;
+    font-size: 16px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    align-items: center; 
+}
+.flex-container{
+    display: flex;
+    width: 100%; 
+    
+}
+.intro{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.image{
+   flex-basis: 500px;
+    margin-right: 10%;
+    padding: 0px 0px 0px 10px;
+}
+.image img{
+    border-radius : 0px 190px 0px 153px;
+    width : 450px;
+    height : 450px;
+    object-fit: cover;
+    border: 3px solid rgba(255,255,255,.6);
+}
+.intro h1,h2{
+    font-size: 90px;
+    padding: 0px 0px 0px 10px;
+    margin-left: 15%;
+}
+.intro h2{
+    position: relative;
+    top: 10%;
+    
+    
+}
+.intro p{
+    margin-left: 15%;
+    padding: 0px 0px 0px 10px;
+    text-align: center;
+    width: 50%;
+}
+.intro button{
+    text-align: center;
+    position: relative;
+    left: 45vh;
+    background: transparent;
+    margin: 10px;
+    width: 15%;
+    height: 10%;
+    border-radius: 10px;
+    z-index: 100;
+}
+.intro button a{
+    text-decoration: none;
+}
+.intro button:hover{
+    background-color: #7f00ff;
+}
+
+ li a:hover{
+     border-bottom: #fff solid 2px;
+}
+
+.wrapper-2::before{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    right: -12%;
+    top: 100%;
+    z-index: -1;
+    background: linear-gradient(85deg,#7f00ff,pink);
+    animation: object3 6s linear infinite;
+}
+@keyframes object3{
+    50%{
+        right:-13%;
+        top: 70%;
+    }
+
+}
+
+/* about */
+#ABOUT{
+ display: flex;
+}
+.skills{
+    flex-grow: 1;
+    height: 100vh;
+}
+.skills h1{
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 20%;
+    
+}
+.skills-box{
+    overflow: hidden;
+    border-radius: 28px;
+    margin-left: 20%;
+    padding: 10PX;
+}
+.skills-prog{
+    align-items: center;
+    margin: 0 0 5px;
+    overflow: hidden;
+    font-size: 25px;
+    color: #FFF;
+}
+.skills-prog label{
+    display: block ;
+    padding: 3px;
+    text-align: start;
+}
+
+.progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 30px;
+    width: 300px;
+    
+  }
+  
+  .progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 90%; }
+  }
+  .progress-css{
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 10;
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 90%; }
+  }
+  .progress-js{
+    animation: load-1 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+  }
+  
+  @keyframes load-1 {
+    0% { width: 0; }
+    100% { width: 50%; }
+  }
+  .progress-react{
+    animation: load-2 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    
+  }
+  
+  @keyframes load-2 {
+    0% { width: 0; }
+    100% { width: 50%; }
+  }
+  .progress-sql{
+    animation: load-3 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+  }
+  
+  @keyframes load-3 {
+    0% { width: 0; }
+    100% { width: 30%; }
+  }
+  .progress-py{
+    animation: load-4 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+  }
+  
+  @keyframes load-4 {
+    0% { width: 0; }
+    100% { width: 50%; }
+  }
+.sec-2{
+    flex-basis: 60%;
+}
+.para .about{
+    margin-top: 7%;
+    padding: 10px;
+    font-size: 30px;
+}
+  .ag-courses_item {
+    overflow: hidden;
+    margin-right: 18%;
+    border-radius: 28px;
+    border: #9d2acf solid 2px;
+  }
+  .ag-courses-item_link {
+    display: block;
+    padding: 15px 10px;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  .ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+  }
+  .ag-courses-item_title {
+    margin: 0 0 5px;
+    overflow: hidden;
+    font-size: 25px;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+  }
+  .ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color: #f9b234;
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  } 
+  .course .abt-crs{
+    padding: 10px;
+    font-size: 30px;
+  }
+  .course-bt{
+        overflow: hidden;
+        margin-right: 18%;
+        border-radius: 28px;
+        border: #9d2acf solid 2px;
+      
+  }
+  .courses-box{
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    z-index: 3;
+    margin: 0 0 5px;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+  }
+
+  .courses-box ol li{
+    margin-left: 10%;
+    width: 100%;
+  }
+  .courses-box ol a{
+    text-decoration: none;
+  }
+  .container{
+    display: flex;
+  }
+  .contact-img img{
+    padding: 0px 0px 0px 10px;
+    backdrop-filter: blur(5px);
+    position: relative;
+    left: 10%;
+    top:10%;
+  }
+  .contact-img{
+    display: flex;
+    align-content: center;
+    padding-top: 5%;
+    flex-grow: 1;
+  }
+  .contact-form{
+    display: flex;
+    flex-basis: 55%;
+    margin-top: 10%;
+  }
+  .contact-form form h1{
+    display: flex;
+    font-weight: bold;
+    font-size: 70px;
+    justify-content: center;
+    left: 25%;
+    position: relative;
+    margin: 10px;
+  }
+      .contact-form form input{
+        background: transparent;
+      position: relative;
+        border: 3px solid rgba(255,255,255,.6);
+        box-sizing: border-box;
+        outline: none;
+        color: white;
+        left: 35%;
+        height: 40px;
+        width: 80%;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .contact-form form textarea{
+      resize: none;
+      line-height: 24px;
+      height: 100px;
+      width: 80%;
+      background: transparent;
+      border: 3px solid rgba(255,255,255,.6);
+      box-sizing: border-box;
+      outline: none;
+      color: white;
+      position: relative;
+      left: 35%;
+      border-radius: 10px;
+      padding: 10px;
+      }
+      .contact-form form button{
+        background:transparent;
+        width: 100px;
+        text-align: center;
+        position: relative;
+        left: 60%;
+        margin: 10px;
+        height: 10%;
+        border-radius: 10px;
+        border: 3px solid rgba(255,255,255,.6);
+        outline: none;
+      }
+      ::placeholder {
+        color: white;
+        opacity: 1; 
+      }
+      li{
+        list-style: none;
+      }
+      .image li {
+      }
+       .links-insta{
+       position: absolute;
+        top: 65%; 
+        right: 7%;
+        font-size: 25px;
+        background-color: #7f00ff;
+        border-radius: 50%;
+        width: 45px;
+        border: 3px solid rgba(255,255,255,.6);
+        text-align: center;
+      }
+      .links-github {
+      position: absolute;
+      top: 85%; 
+      right: 7%;
+      border: 3px solid rgba(255,255,255,.6);
+      font-size: 25px;
+      width: 45px;
+      background-color: #7f00ff;
+      text-align: center;
+      border-radius: 50%;
+    }
+      .links-linkdin{
+        position: absolute;
+        top: 75%; 
+        right: 7%;
+        border: 3px solid rgba(255,255,255,.6);
+        font-size: 25px;
+        width: 45px;
+        background-color: #7f00ff;
+        text-align: center;
+        border-radius: 50%;
+      }
+      @media screen and (min-width < 480px) {
+        .image img{
+       display: none;
+        }
+      }
+      @media (width <= 480px) {
+        .image{
+          display: none;
+           }
+           .contact-img img{
+            display: none;
+          }
+          .intro h1,h2{
+            font-size: 90px;
+            text-align: center;
+            margin-left: 0%;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 10px;
+            
+          }
+          .intro h1{
+            margin-left: 5%;
+          }
+          .intro p{
+            margin-left: 0%;
+            font-size: 22px;
+            justify-content: center;
+            padding: 0px 0px 10px 10px;
+            text-align: center;
+            padding: 10px;
+            width: 100%;}
+            .intro button{
+              text-align: center;
+              position: relative;
+              left: 30vh;
+              background: transparent;
+              width: 35%;
+              font-size: 20px;
+              padding: 20px;
+              text-align: center;
+              border-radius: 10px;
+              z-index: 100;
+            }
+            .intro button a{
+              text-align: center;
+            }
+      }
